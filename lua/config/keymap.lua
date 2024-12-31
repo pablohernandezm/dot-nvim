@@ -1,18 +1,4 @@
-local wk = require("which-key")
-wk.add({
-  {
-    mode = { "n", "v" },
-    { "<leader>q", "<cmd>q<cr>",                          desc = "Quit" },
-    { "<leader>w", "<cmd>w<cr>",                          desc = "Write" },
-    { "<leader>%", "<cmd>so ~/.config/nvim/init.lua<cr>", desc = "Reload env" },
-  },
-
-  -- Buffer group
-  { "<leader>b",  group = "buffers" },
-  { "<leader>bc", "<cmd>bd<cr>",    desc = 'Close buffer' },
-
-  { "<leader>L",  "<cmd>Lazy<cr>",  desc = "Lazy",        mode = "n" },
-
-  -- Dadbod group
-  { "<leader>D",  group = "dadbod" },
-})
+vim.keymap.set({ 'n', 'v' }, '<leader>q', '<CMD>q<CR>)', { desc = 'Close' })
+vim.keymap.set({ 'n', 'v' }, '<leader>w', '<CMD>w<CR>)', { desc = 'Write' })
+vim.keymap.set({ 'n', 'v' }, '<leader>%', '<CMD>so ~/.config/nvim/init.lua<CR>)', { desc = 'Reload settings' })
+vim.keymap.set('n', '<leader>bc', '<CMD>bd<CR>', { desc = 'Close buffer' })
