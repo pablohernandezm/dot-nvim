@@ -13,6 +13,9 @@ return {
 
         -- Dadbod group
         { "<leader>D", group = "dadbod" },
+
+        -- Telescope group
+        { "<leader>t", group = "telescope" },
       })
     end
   },
