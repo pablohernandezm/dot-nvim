@@ -30,9 +30,6 @@ wk.add({
     { "<leader>q", "<cmd>q<cr>", desc = "Quit" },
     { "<leader>w", "<cmd>w<cr>", desc = "Write" },
   },
-  {
-    "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Explorer", mode = "n"
-  },
   { "<leader>L",  "<cmd>Lazy<cr>",                       desc = "Lazy",       mode = "n" },
   { "<leader>%",  "<cmd>so ~/.config/nvim/init.lua<cr>", desc = "Reload env", mode = 'n' },
 
