@@ -16,7 +16,7 @@ return {
         ['?'] = { 'actions.show_help', mode = 'n' },
         ['g.'] = false,
         ['<S-h>'] = { 'actions.toggle_hidden', mode = 'n' },
-        ['<leader>ff'] = {
+        ['<leader>tf'] = {
           function()
             require("telescope.builtin").find_files({
               cwd = require("oil").get_current_dir()
@@ -24,7 +24,7 @@ return {
           end,
           mode = 'n',
           nowait = true,
-          desc = "Find files in the current directory"
+          desc = "Find files in the directory",
         },
       },
     })
