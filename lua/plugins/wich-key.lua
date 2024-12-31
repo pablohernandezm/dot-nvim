@@ -16,6 +16,9 @@ return {
 
         -- Telescope group
         { "<leader>t", group = "telescope" },
+
+        -- Trouble group
+        { "<leader>x", group = "trouble" }
       })
     end
   },
