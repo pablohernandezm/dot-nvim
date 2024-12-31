@@ -13,5 +13,7 @@ return {
   init = function()
     -- Your DBUI configuration
     vim.g.db_ui_use_nerd_fonts = 1
+    vim.keymap.set("n", "<leader>DT", "<CMD>DBUIToggle<CR>", { desc = "Toggle UI" })
+    vim.keymap.set("n", "<leader>DF", "<CMD>DBUIFindBuffer<CR>", { desc = "Find buffer" })
   end,
 }
