@@ -9,6 +9,10 @@ return {
       'svelte',
       'bash',
       'sql',
+    },
+
+    highlight = {
+      enable = true,
     }
   },
   config = function(_, opts)
