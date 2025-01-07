@@ -55,6 +55,7 @@ return {
         cssmodules_ls = {},
         html = {},
         svelte = {},
+        rnix = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -94,7 +95,15 @@ return {
 
       local lspconfig = require('lspconfig')
       local mason = require("mason")
+      local masonlsp = require("mason-lspconfig")
+
       mason.setup()
+
+      local servers = vim.tbl_keys(opts.servers)
+
+      masonlsp.setup {
+        ensure_installed = servers,
+      }
 
       for server, config in pairs(opts.servers) do
         config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)

@@ -10,6 +10,7 @@ return {
       'svelte',
       'bash',
       'sql',
+      'nix',
     },
 
     highlight = {
