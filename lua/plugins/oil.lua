@@ -10,7 +10,7 @@ return {
         show_hidden = true,
       },
       keymaps = {
-        ['l'] = { 'actions.select' },
+        ['L'] = { 'actions.select' },
         ['q'] = { 'actions.close', mode = 'n' },
         ['g?'] = false,
         ['?'] = { 'actions.show_help', mode = 'n' },
