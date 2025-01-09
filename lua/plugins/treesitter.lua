@@ -11,6 +11,7 @@ return {
       'bash',
       'sql',
       'nix',
+      'hyprlang',
     },
 
     highlight = {

@@ -56,6 +56,7 @@ return {
         html = {},
         svelte = {},
         rnix = {},
+        hyprls = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -104,6 +105,10 @@ return {
       masonlsp.setup {
         ensure_installed = servers,
       }
+      
+      vim.filetype.add({
+        pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+      })
 
       for server, config in pairs(opts.servers) do
         config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
