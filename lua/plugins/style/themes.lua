@@ -83,6 +83,8 @@ return {
 					-- Visual = { fg = "base", bg = "text", inherit = false },
 					StatusLine = { fg = "love", bg = "love", blend = 10 },
 					StatusLineNC = { fg = "subtle", bg = "surface" },
+					CurSearch = { fg = "base", bg = "leaf", inherit = false },
+					Search = { fg = "text", bg = "leaf", blend = 20, inherit = false },
 					TelescopeBorder = { fg = "highlight_high", bg = "none" },
 					TelescopeNormal = { bg = "none" },
 					TelescopePromptNormal = { bg = "base" },
