@@ -7,27 +7,21 @@ return {
 			{
 				"H",
 				function()
-					if vim.bo.filetype ~= "oil" then
-						vim.cmd("BufferLineCyclePrev")
-					end
+					vim.cmd("BufferLineCyclePrev")
 				end,
 				desc = "Previous Buffer",
 			},
 			{
 				"L",
 				function()
-					if vim.bo.filetype ~= "oil" then
-						vim.cmd("BufferLineCycleNext")
-					end
+					vim.cmd("BufferLineCycleNext")
 				end,
 				desc = "Next buffer",
 			},
 			{
 				"<leader>bh",
 				function()
-					if vim.bo.filetype ~= "oil" then
-						vim.cmd("BufferLineMovePrev")
-					end
+					vim.cmd("BufferLineMovePrev")
 				end,
 				desc = "Mover hacia atras",
 			},
