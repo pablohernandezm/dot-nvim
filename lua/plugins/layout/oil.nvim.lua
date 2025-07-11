@@ -32,7 +32,7 @@ return {
 				function()
 					vim.cmd((vim.bo.filetype == "oil") and "bd" or "Oil")
 				end,
-				"Toggle explorer",
+				desc = "Toggle explorer",
 			},
 		},
 

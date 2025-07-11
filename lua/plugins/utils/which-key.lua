@@ -16,8 +16,14 @@ return {
 				-- Buffer group
 				{ "<leader>b", group = "buffers", icon = "󰓩" },
 
-				-- Dadbod group
-				{ "<leader>D", group = "dadbod", icon = "" },
+				-- Buffer group
+				{ "<leader>b", group = "buffers", icon = "󰓩" },
+
+				-- Git group
+				{ "<leader>g", group = "Git", icon = "" },
+
+				-- Lsp group
+				{ "<leader>l", group = "lsp", icon = "" },
 
 				-- Telescope group
 				{ "<leader>t", group = "telescope" },
@@ -35,15 +41,6 @@ return {
 				{ "<leader>bc", "<cmd>bd<cr>", desc = "Close buffer", mode = "n" },
 				{ "<leader>bn", "<cmd>bnext<cr>", desc = "Next buffer", mode = "n" },
 				{ "<leader>bp", "<cmd>bprev<cr>", desc = "Previous buffer", mode = "n" },
-
-				-- Environment key maps
-				{
-					"<leader>r",
-					"<cmd>so ~/.config/nvim/init.lua<cr>",
-					desc = "Reload settings",
-					mode = "n",
-					icon = "󰑓",
-				},
 
 				-- Lazy
 				{
