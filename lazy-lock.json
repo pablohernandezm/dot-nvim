@@ -9,10 +9,10 @@
   "neovim": { "branch": "main", "commit": "f93360149e9ed4df8677fbb07c7231ea0fd03b97" },
   "nvim-web-devicons": { "branch": "master", "commit": "a1366758b3a232036dc97be8ca41184aa3f50506" },
   "oil-git.nvim": { "branch": "main", "commit": "3abffa67597aab5f915816d71e96cbed76147016" },
+  "oil-lsp-diagnostics.nvim": { "branch": "master", "commit": "e04e3c387262b958fee75382f8ff66eae9d037f4" },
   "oil.nvim": { "branch": "master", "commit": "bbad9a76b2617ce1221d49619e4e4b659b3c61fc" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
-  "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "7c1595733366d25ddd3a6785cf6327e2e460bae9" },
   "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" },
   "vim-fugitive": { "branch": "master", "commit": "d3e2b58dec75fc6012fecc82ce0d33a45ed0560e" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }

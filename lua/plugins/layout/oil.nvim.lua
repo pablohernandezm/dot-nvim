@@ -12,10 +12,6 @@ end
 
 return {
 	{
-		"benomahony/oil-git.nvim",
-		dependencies = { "stevearc/oil.nvim" },
-	},
-	{
 		"stevearc/oil.nvim",
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 
@@ -49,5 +45,21 @@ return {
 				},
 			})
 		end,
+	},
+	{
+		"benomahony/oil-git.nvim",
+		dependencies = { "stevearc/oil.nvim" },
+	},
+	{
+		"JezerM/oil-lsp-diagnostics.nvim",
+		dependencies = { "stevearc/oil.nvim" },
+		opts = {
+			diagnostic_symbols = {
+				error = "󰞏",
+				warn = "",
+				info = "",
+				hint = "",
+			},
+		},
 	},
 }
