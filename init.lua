@@ -5,6 +5,21 @@ vim.lsp.enable("nil")
 vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("tinymist")
 
+vim.diagnostic.config({
+	update_in_insert = true,
+	virtual_text = {
+		prefix = "",
+	},
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "󰞏",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.INFO] = "",
+			[vim.diagnostic.severity.HINT] = "",
+		},
+	},
+})
+
 -- Tabulation and indentation settings
 vim.opt.expandtab = true -- Convert tabs into spaces
 vim.opt.smartindent = true
