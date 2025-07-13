@@ -1,5 +1,7 @@
 require("config.lazy")
+require("config.autocmds")
 
+-- LSP
 vim.lsp.enable("luals")
 vim.lsp.enable("nil")
 vim.lsp.enable("rust-analyzer")
@@ -21,19 +23,33 @@ vim.diagnostic.config({
 })
 
 -- Tabulation and indentation settings
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true -- Convert tabs into spaces
 vim.opt.smartindent = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.autoindent = true
 
+-- Behavior
+vim.opt.scrolloff = 10
+vim.opt.sidescrolloff = 8
+vim.opt.cursorline = true
 vim.opt.wrap = false
+vim.opt.mouse = "a"
 
 -- Line numbering settings
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Terminal colors
+-- Visuals
 vim.opt.termguicolors = true
+vim.opt.signcolumn = "yes"
+vim.opt.showmatch = true
+vim.opt.matchtime = 2
+vim.opt.pumheight = 10
+vim.opt.pumblend = 10
+vim.opt.winblend = 0
+vim.opt.synmaxcol = 300
 
 -- clipboard
 vim.o.clipboard = "unnamedplus"
@@ -41,3 +57,18 @@ vim.o.clipboard = "unnamedplus"
 -- Spell checker
 vim.opt.spelllang = "en,es"
 vim.opt.spell = true
+
+-- File handling
+vim.opt.timeoutlen = 500
+vim.opt.ttimeoutlen = 0
+vim.opt.autoread = true
+vim.opt.autowrite = false
+
+-- Special directories
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.swapfile = false
+vim.opt.undofile = true
+
+UNDODIR = vim.env.HOME .. "/.config/temp/nvim/undodir"
+vim.opt.undodir = UNDODIR
