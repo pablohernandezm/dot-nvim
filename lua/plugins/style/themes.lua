@@ -78,10 +78,10 @@ return {
 				-- NOTE: Highlight groups are extended (merged) by default. Disable this
 				-- per group via `inherit = false`
 				highlight_groups = {
-					-- Comment = { fg = "foam" },
-					-- VertSplit = { fg = "muted", bg = "muted" },
-					-- Visual = { fg = "base", bg = "text", inherit = false },
-					StatusLine = { fg = "love", bg = "love", blend = 10 },
+					Comment = { fg = "subtle" },
+					VertSplit = { fg = "muted", bg = "muted" },
+					Visual = { fg = "base", bg = "text", inherit = false },
+					StatusLine = { fg = "rose", bg = "rose", blend = 10 },
 					StatusLineNC = { fg = "subtle", bg = "surface" },
 					CurSearch = { fg = "base", bg = "leaf", inherit = false },
 					Search = { fg = "text", bg = "leaf", blend = 20, inherit = false },
@@ -106,12 +106,12 @@ return {
 				end,
 			})
 
-			vim.cmd("colorscheme rose-pine")
+			-- "vim.cmd("colorscheme rose-pine")
 			-- vim.cmd("colorscheme rose-pine-main")
-			-- vim.cmd("colorscheme rose-pine-moon")
+			vim.cmd("colorscheme rose-pine-moon")
 			-- vim.cmd("colorscheme rose-pine-dawn")
 
-			vim.opt.laststatus = 2 -- Or 3 for global statusline
+			vim.opt.laststatus = 3 -- Or 3 for global statusline
 			vim.opt.statusline = "   %f %m %= %l:%c ♥"
 		end,
 	},
