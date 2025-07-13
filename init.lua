@@ -6,6 +6,8 @@ vim.lsp.enable("luals")
 vim.lsp.enable("nil")
 vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("tinymist")
+vim.lsp.enable("taplo")
+vim.lsp.enable("jsonls")
 
 vim.diagnostic.config({
 	update_in_insert = true,
