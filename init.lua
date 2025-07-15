@@ -1,13 +1,19 @@
 require("config.lazy")
 require("config.autocmds")
+require("config.keymaps")
 
 -- LSP
+vim.lsp.config("*", {
+	root_markers = { ".git" },
+})
+
 vim.lsp.enable("luals")
 vim.lsp.enable("nil")
 vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("tinymist")
 vim.lsp.enable("taplo")
 vim.lsp.enable("jsonls")
+vim.lsp.enable("cssls")
 
 vim.diagnostic.config({
 	update_in_insert = true,
@@ -72,5 +78,5 @@ vim.opt.writebackup = false
 vim.opt.swapfile = false
 vim.opt.undofile = true
 
-UNDODIR = vim.env.HOME .. "/.config/temp/nvim/undodir"
+UNDODIR = vim.env.HOME .. "/.cache/nvim/undodir/"
 vim.opt.undodir = UNDODIR
