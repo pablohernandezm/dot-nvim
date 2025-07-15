@@ -112,7 +112,7 @@ return {
 			-- vim.cmd("colorscheme rose-pine-dawn")
 
 			vim.opt.laststatus = 3 -- Or 3 for global statusline
-			vim.opt.statusline = "   %f %m %= %l:%c ♥"
+			vim.opt.statusline = "   %f %y %m   %= %l:%c ♥"
 		end,
 	},
 }
