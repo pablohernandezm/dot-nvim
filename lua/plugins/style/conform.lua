@@ -22,7 +22,7 @@ return {
 			local options = {
 				formatters_by_ft = {
 					-- General
-					nix = { "alejandra" },
+					nix = { "nixfmt" },
 					lua = { "stylua" },
 					rs = { "rustfmt" },
 					sql = { "pg_format", "deno_fmt" },

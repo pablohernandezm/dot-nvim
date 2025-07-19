@@ -8,7 +8,7 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.enable("luals")
-vim.lsp.enable("nil")
+vim.lsp.enable("nixd")
 vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("tinymist")
 vim.lsp.enable("taplo")
